@@ -44,9 +44,6 @@ bower_components
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directories
-node_modules/
-
 # Optional npm cache directory
 .npm
 
@@ -62,5 +59,16 @@ node_modules/
 # Yarn Integrity file
 .yarn-integrity
 
+# IntelliJ
+.idea
+
 # dotenv environment variables file
 .env
+
+# MacOS
+.DS_Store
+
+# Gatsby
+node_modules/
+.cache/
+public
