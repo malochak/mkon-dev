@@ -2,7 +2,7 @@ import * as React from "react"
 import "../styles/style.css"
 import {FaGithubSquare, FaLinkedin, FaTwitterSquare} from "react-icons/all";
 import {IconContext} from "react-icons";
-import {Link} from "gatsby";
+import {OutboundLink} from "gatsby-plugin-google-analytics";
 
 const socialLinks = {
     linkedin: "https://linkedin.com/in/konrad-małocha-b77bb813b",
@@ -24,15 +24,15 @@ const IndexPage = () => {
                 </p>
                 <div className={"socials"}>
                     <IconContext.Provider value={{size: "48"}}>
-                        <Link to={socialLinks.github} target="_blank" className={"github-icon"}>
+                        <OutboundLink href={socialLinks.github} target="_blank" className={"github-icon"}>
                             <FaGithubSquare/>
-                        </Link>
-                        <Link to={socialLinks.linkedin} target="_blank" className={"linkedin-icon"}>
+                        </OutboundLink>
+                        <OutboundLink href={socialLinks.linkedin} target="_blank" className={"linkedin-icon"}>
                             <FaLinkedin/>
-                        </Link>
-                        <Link to={socialLinks.twitter} target="_blank" className={"twitter-icon"}>
+                        </OutboundLink>
+                        <OutboundLink href={socialLinks.twitter} target="_blank" className={"twitter-icon"}>
                             <FaTwitterSquare/>
-                        </Link>
+                        </OutboundLink>
                     </IconContext.Provider>
                 </div>
             </div>
