@@ -13,7 +13,42 @@ body {
 #root {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.github-icon {
+    color: white;
+}
+
+.github-icon :hover {
+    color: #333;
+    cursor: pointer;
+}
+
+.linkedin-icon {
+    color: white;
+}
+
+.linkedin-icon :hover {
+    color: #0077b5;
+    cursor: pointer;
+}
+
+.twitter-icon {
+    color: white;
+}
+
+.twitter-icon :hover {
+    color: #1da1f2;
+    cursor: pointer;
+}
+
