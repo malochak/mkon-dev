@@ -12,7 +12,7 @@ const config: GatsbyConfig = {
         // The property ID; the tracking code won't be generated without it
         trackingId: "G-7S3XWRG6ZY",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
+        head: true,
         // Setting this parameter is optional
         anonymize: true,
         // Setting this parameter is also optional
